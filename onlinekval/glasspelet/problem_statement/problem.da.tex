@@ -1,19 +1,19 @@
 \problemname{Islegen}
 
-Kirderf og Slin er kommet tidligt til en fest, hvor der sereres is til alle.
+Kirderf og Slin er kommet tidligt til en fest, hvor der serveres is til alle.
 Lige nu er de alene i festlokalet, hvor alle $N$ is står på én lang række på en bord.
 Der er $K$ forskellige slags is, hver slags er repræsenteret af et heltal mellem $0$ og $K-1$.
 
 
 Slin og Kirderf er meget issultne og vil derfor spille et spil, som går ud på at spise isen.
 De skiftes til at trække, og et træk består af at spise netop én is.
-Festkommiteen kan komme ind i lokalet lige hvornår det skal være, og det bør ikke være for åbenbart, at Slin og Kirderf har smugspist af isene.
+Festudvalget kan komme ind i lokalet lige hvornår det skal være, og det bør ikke være for åbenbart, at Slin og Kirderf har smugspist af isene.
 Derfor kan de kun spise is enten fra længst til venstre eller længst til højre, så der ikke opstår nogle mellemrum i isrækken.
 Derudover skal der altid være mindst en af hver slags is tilbage, ellers er de jo tydeligt, at noget har spist.
 Den spiller, der ikke kan gøre et lovligt træk, taber.
 
 Kirderf vil absolut ikke tabe mod Slin, derfor har han bedt dig om at skrive et program, som afgør, hvem der har den vindende strategi ved forskellige tilstande i spillet.
-Du vil frå $Q$ spørgsmål, hvor hvert spørgsmål er et interval $[L,R]$, og dit program skal afgøre, hvem der har en vindende strategi, når kun isene nummer $L$, $L+1$, $\dots$, $R$ er tilbage (isene er nummererede fra $1$ til $N$ fra venstre til højre).
+Du vil få $Q$ spørgsmål, hvor hvert spørgsmål er et interval $[L,R]$, og dit program skal afgøre, hvem der har en vindende strategi, når kun isene nummer $L$, $L+1$, $\dots$, $R$ er tilbage (isene er nummererede fra $1$ til $N$ fra venstre til højre).
 
 At en spiller har en vindende strategi betyder, at den spiller altid kan vinde spillet, uanset modstanderens træk.
 Man kan vise, at enten Kirderf eller Nils altid har en vindende strategi.
@@ -57,7 +57,7 @@ Gruppe & Pointværdi & Begrænsninger \\ \hline
 I tilstanden $[1,5]$ (dvs. alle $5$ is er tilbage) har anden spiller en vindende strategi.
 Uanset hvad første spiller måtte vælge, findes der et muligt træk for anden spiller, hvorefter der bare findes $3$ is tilbage -- dermed har  første spiller tabt.
 
-I tilstanden $[1,4]$ har første spiller  en vinnande strategi, nemlig at fjerne is nummer~1.
+I tilstanden $[1,4]$ har første spiller  en vindende strategi, nemlig at fjerne is nummer~1.
 
 Tilstanden $[1,3]$ er ugyldig, idet der ikke findes nogen is af slagsen »2« blandt de første tre is.
 

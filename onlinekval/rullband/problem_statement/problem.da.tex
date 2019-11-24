@@ -2,7 +2,7 @@
 
 Det svenske hold til den internationale programmeringsolympiade har lige landet i Singapore for at deltage i
  \href{https://ioi2020.sg/}{IOI 2020}.
-På vej til bagageudleveringen skal de igennem in lang gang med en masse rullebånd.
+På vej til bagageudleveringen skal de igennem en lang gang med en masse rullebånd.
 Gangen er $M$ meter lang, og holdet står i begyndelsen af den og overvejer, hvor hurtigt de kan komme frem til bagageudleveringen. 
 Der er $N$ \href{https://sv.wikipedia.org/wiki/Rullande_trottoar}{rullebånd} i gangen.
 Hvert rullebånd begynder på en vis afstand fra begyndelsen af gangen, slutter på en vis afstand fra begyndelsen af gangen og tager en vis tid at køre langs.
@@ -17,7 +17,7 @@ Der findes dog ingen rullende fortov, som kører baglæns.
 
 \section*{Indlæsning}
 Første linje indeholder tre heltal $N$, $M$, $g$ ($1 \le N \le 2 \times 10^5$, $2 \le M \le 2 \times 10^5$, $1 \le g \le 100$):
-antallet af rullende fortov, gangens længde i meter og holdest ganghastighed i sekunder per meter.
+antallet af rullende fortov, gangens længde i meter og holdets ganghastighed i sekunder per meter.
 Hver af de følgende $N$ linjer beskriver et rullende fortov og indeholder hver 3 heltal: $s_i, e_i$ og $t_i$
 ($1\leq s_i,e_i\leq M,1\leq t_i\leq100$).
 Her er $s_i$  antallet meter fra begyndelsen af gangen til det rullende fortovs begyndelse, $e_i$ antallet af meter fra begyndelsen af gangen til det rullende fortovs slutning og $t_i$ hvor lang tid det tager at køre fortovet fra begyndelse til slutning i sekunder.
@@ -26,7 +26,7 @@ Her er $s_i$  antallet meter fra begyndelsen af gangen til det rullende fortovs 
 Udskriv en linje med et heltal: antallet af sekunder, det tager at komme gennem gangen.
 
 \section*{Pointgivning}
-Din løsning bliver kørt på et antal testfalgsgrupper.
+Din løsning bliver kørt på et antal testfaldsgrupper.
 For at få point for en gruppe, så skal du klare alle testfald i gruppen.
 
 \noindent
@@ -48,7 +48,7 @@ Gruppe & Pointværdi & Begrænsninger \\ \hline
 \caption{Eksempel 1}
 \end{figure}
 I eksempel 1 tager det 2 sekunder at gå en meter når holdet ikke er på noget rullende fortov.
-Den hurtigste måde at komme igennem gangen er at gå til 5-sekundersbåndet, køre med det, defra gå videre til 2-sekundersbåndet og køre med det.
+Den hurtigste måde at komme igennem gangen er at gå til 5-sekundersbåndet, køre med det, derfra gå videre til 2-sekundersbåndet og køre med det.
 Sammenlagt tager dette $4+5+2+2=13$ sekunder.
 
 
