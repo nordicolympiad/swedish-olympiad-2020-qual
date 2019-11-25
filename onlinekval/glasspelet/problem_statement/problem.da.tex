@@ -5,12 +5,12 @@ Lige nu er de alene i festlokalet, hvor alle $N$ is står på én lang række p�
 Der er $K$ forskellige slags is, hver slags er repræsenteret af et heltal mellem $0$ og $K-1$.
 
 
-Slin og Kirderf er meget issultne og vil derfor spille et spil, som går ud på at spise isen.
+Slin og Kirderf er meget lækkersultne og vil derfor spille et spil, som går ud på at spise is.
 De skiftes til at trække, og et træk består af at spise netop én is.
 Festudvalget kan komme ind i lokalet lige hvornår det skal være, og det bør ikke være for åbenbart, at Slin og Kirderf har smugspist af isene.
 Derfor kan de kun spise is enten fra længst til venstre eller længst til højre, så der ikke opstår nogle mellemrum i isrækken.
-Derudover skal der altid være mindst en af hver slags is tilbage, ellers er de jo tydeligt, at noget har spist.
-Den spiller, der ikke kan gøre et lovligt træk, taber.
+Derudover skal der altid være mindst en af hver slags is tilbage, ellers er de jo tydeligt, at noget har spist is.
+Den spiller, der ikke kan gøre et lovligt træk, har tabt.
 
 Kirderf vil absolut ikke tabe mod Slin, derfor har han bedt dig om at skrive et program, som afgør, hvem der har den vindende strategi ved forskellige tilstande i spillet.
 Du vil få $Q$ spørgsmål, hvor hvert spørgsmål er et interval $[L,R]$, og dit program skal afgøre, hvem der har en vindende strategi, når kun isene nummer $L$, $L+1$, $\dots$, $R$ er tilbage (isene er nummererede fra $1$ til $N$ fra venstre til højre).
@@ -41,7 +41,7 @@ For at få point for en gruppe, skal du klare samtlige testfald i gruppen.
 \noindent
 \begin{tabular}{| l | l | l |}
 \hline
-Gruppe & Pointværdi & Begrænsninger \\ \hline
+Gruppe & Pointi    & Begrænsninger \\ \hline
 1     & 9          &  $N,Q \le 15$.\\ \hline
 2     & 11         &  $N,Q \le 100$. \\ \hline
 3     & 17         &  $N,Q \le 1000$. \\ \hline
@@ -52,7 +52,7 @@ Gruppe & Pointværdi & Begrænsninger \\ \hline
 8     & 17         &  Ingen yderligere begrænsninger. \\ \hline
 \end{tabular}
 
-\section*{Forklaring af eksempelfaldet}
+\section*{Forklaring af eksemplet}
 
 I tilstanden $[1,5]$ (dvs. alle $5$ is er tilbage) har anden spiller en vindende strategi.
 Uanset hvad første spiller måtte vælge, findes der et muligt træk for anden spiller, hvorefter der bare findes $3$ is tilbage -- dermed har  første spiller tabt.
